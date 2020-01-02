@@ -1,19 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echic.Core", "Echic.Core\Echic.Core.csproj", "{1514A519-95C1-4CDB-A99E-165E4B90A0BE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{70F1E94A-F049-44F9-A835-25D8358FB66A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{70F1E94A-F049-44F9-A835-25D8358FB66A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4EEFE00E-5BF5-4B3C-B389-6E66DC5C660E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echic.Console", "Echic.Console\Echic.Console.csproj", "{6096EE40-6320-4FC0-BE8D-F47069BC4D07}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{AE3577FA-837F-4D1B-BC75-C67EA2F11384}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echic.Demo", "Echic.Demo\Echic.Demo.csproj", "{81788ED4-21FA-41E5-822D-45BC348A36CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echic.Core", "Echic.Core\Echic.Core.csproj", "{2BA2FC6A-D18B-482B-8361-08DEF1FE5DAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echic.Console", "Echic.Console\Echic.Console.csproj", "{CC8A829F-D739-40EC-B80B-D773AE7A6B90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,25 +19,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1514A519-95C1-4CDB-A99E-165E4B90A0BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1514A519-95C1-4CDB-A99E-165E4B90A0BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1514A519-95C1-4CDB-A99E-165E4B90A0BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1514A519-95C1-4CDB-A99E-165E4B90A0BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6096EE40-6320-4FC0-BE8D-F47069BC4D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6096EE40-6320-4FC0-BE8D-F47069BC4D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6096EE40-6320-4FC0-BE8D-F47069BC4D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6096EE40-6320-4FC0-BE8D-F47069BC4D07}.Release|Any CPU.Build.0 = Release|Any CPU
-		{81788ED4-21FA-41E5-822D-45BC348A36CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81788ED4-21FA-41E5-822D-45BC348A36CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81788ED4-21FA-41E5-822D-45BC348A36CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81788ED4-21FA-41E5-822D-45BC348A36CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BA2FC6A-D18B-482B-8361-08DEF1FE5DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BA2FC6A-D18B-482B-8361-08DEF1FE5DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BA2FC6A-D18B-482B-8361-08DEF1FE5DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BA2FC6A-D18B-482B-8361-08DEF1FE5DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8A829F-D739-40EC-B80B-D773AE7A6B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8A829F-D739-40EC-B80B-D773AE7A6B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8A829F-D739-40EC-B80B-D773AE7A6B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8A829F-D739-40EC-B80B-D773AE7A6B90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{1514A519-95C1-4CDB-A99E-165E4B90A0BE} = {70F1E94A-F049-44F9-A835-25D8358FB66A}
-		{6096EE40-6320-4FC0-BE8D-F47069BC4D07} = {4EEFE00E-5BF5-4B3C-B389-6E66DC5C660E}
-		{81788ED4-21FA-41E5-822D-45BC348A36CF} = {AE3577FA-837F-4D1B-BC75-C67EA2F11384}
+		{2BA2FC6A-D18B-482B-8361-08DEF1FE5DAA} = {70F1E94A-F049-44F9-A835-25D8358FB66A}
+		{CC8A829F-D739-40EC-B80B-D773AE7A6B90} = {4EEFE00E-5BF5-4B3C-B389-6E66DC5C660E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1EE5B73-C611-4F85-B285-656B5964A542}
 	EndGlobalSection
 EndGlobal
