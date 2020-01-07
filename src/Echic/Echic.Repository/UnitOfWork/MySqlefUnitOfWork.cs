@@ -7,19 +7,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Echic.Repository.UnitOfWork
 {
-    public class EfUnitOfWork : IEfUnitOfWork
+    public class MySqlefUnitOfWork : IMySqlefUnitOfWork
     {
-        private readonly IDatabaseFactory DBFactory;
-
-        public EfUnitOfWork(IDatabaseFactory dbFactory)
+        public MySqlefUnitOfWork(MySqlDbContext dbContext)
         {
-            this.DBFactory = dbFactory;
+            this.DBContext = dbContext;
         }
 
-        public BaseDbContext DBContext
-        {
-            get { return DBFactory.Get(); }
-        }
+        public IDbContext DBContext { get; set; }
 
         public void Created<TEntity>(TEntity obj) where TEntity : AggregateRoot
         {

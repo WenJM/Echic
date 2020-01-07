@@ -6,5 +6,6 @@ namespace Echic.Domain.Base
 {
     public abstract class AggregateRoot : IAggregateRoot
     {
+        public string ObjectID { get; set; }
     }
 }

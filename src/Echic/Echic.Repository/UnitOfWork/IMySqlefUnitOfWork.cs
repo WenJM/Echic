@@ -6,8 +6,8 @@ using Echic.Domain.IRepositories;
 
 namespace Echic.Repository.UnitOfWork
 {
-    public interface IEfUnitOfWork : IUnitOfWorkRepositoryContext
+    public interface IMySqlefUnitOfWork : IUnitOfWorkRepositoryContext
     {
-         BaseDbContext DBContext { get; }
+        IDbContext DBContext { get; }
     }
 }

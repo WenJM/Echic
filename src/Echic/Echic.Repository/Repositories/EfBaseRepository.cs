@@ -11,9 +11,9 @@ namespace Echic.Repository.Repositories
 {
     public class EfBaseRepository<TEntity> : IRepository<TEntity> where TEntity : AggregateRoot
     {
-        private IEfUnitOfWork UnitOfWork { get; set; }
+        private IMySqlefUnitOfWork UnitOfWork { get; set; }
 
-        public EfBaseRepository(IEfUnitOfWork unitOfWork)
+        public EfBaseRepository(IMySqlefUnitOfWork unitOfWork)
         {
             this.UnitOfWork = unitOfWork;
         }
