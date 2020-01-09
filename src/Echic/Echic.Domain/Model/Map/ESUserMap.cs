@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Echic.Domain.Model
 {
-    public class ESUserMap : IEntityTypeConfiguration<ES_User>
+    internal class ESUserMap : IEntityTypeConfiguration<ES_User>
     {
         public void Configure(EntityTypeBuilder<ES_User> builder)
         {

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Reflection;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
@@ -16,8 +18,9 @@ namespace Echic.IOC
             var builder = new ContainerBuilder();
 
             //注册MySqlDB
-            var dbCongif = ConfigBuilder.Configuration.GetEntity<ConnectionStrings>("ConnectionStrings");
-            builder.UseMysSQLDB(dbCongif.EchicConnection);
+            builder.UseMysSQLDB();
+            //注册Domain
+            builder.UseDomain();
 
             return builder;
         }

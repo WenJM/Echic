@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Echic.IOC;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace Echic.Test
 {
@@ -27,10 +28,11 @@ namespace Echic.Test
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddControllersAsServices();
 
             var builder = IOCBuilder.Initialize();
-
+            
             //注册所有控制器
             var controllers = typeof(Startup)
                 .Assembly.GetExportedTypes().Where(type => typeof(ControllerBase).IsAssignableFrom(type)).ToArray();
+
             builder.RegisterTypes(controllers).PropertiesAutowired();
 
             builder.Populate(services);

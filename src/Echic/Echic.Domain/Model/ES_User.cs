@@ -6,9 +6,9 @@ using Echic.Domain.Base;
 
 namespace Echic.Domain.Model
 {
-    public partial class ES_User : IAggregateRoot
+    public partial class ES_User : AggregateRoot
     {
-        public string ObjectID { get; set; }
+        public new string ObjectID { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public Nullable<DateTime> Expired { get; set; }

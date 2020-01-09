@@ -4,14 +4,14 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using Echic.Domain.Base;
+using Echic.Domain.UnitOfWork;
 using Echic.Domain.IRepositories;
-using Echic.Repository.UnitOfWork;
 
-namespace Echic.Repository.Repositories
+namespace Echic.Domain.Repositories
 {
     public class EfBaseRepository<TEntity> : IRepository<TEntity> where TEntity : AggregateRoot
     {
-        internal IMySqlefUnitOfWork UnitOfWork { get; set; }
+        public IMySqlefUnitOfWork UnitOfWork { get; set; }
 
         public int Add(TEntity entity)
         {
